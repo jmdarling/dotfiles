@@ -1,0 +1,11 @@
+## Fonts
+font-family = "Hack Nerd Font Mono"
+
+## Appearance
+background-opacity = 0.95
+theme = light:rose-pine-dawn,dark:rose-pine
+
+## Quick terminal
+keybind = global:opt+space=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-screen = mouse
