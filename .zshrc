@@ -4,6 +4,10 @@ eval "$(zoxide init zsh)"
 
 # ZSH "plugins"
 
+## Enable ZSH completion
+autoload -Uz compinit
+compinit
+
 ## Enable fuzzy matching
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=**'
 
