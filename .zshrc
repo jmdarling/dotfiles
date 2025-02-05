@@ -1,5 +1,12 @@
 # Enable tooling.
+
+## FZF
+source <(fzf --zsh)
+
+## Starship
 eval "$(starship init zsh)"
+
+## Zoxide
 eval "$(zoxide init zsh)"
 
 # ZSH "plugins"
