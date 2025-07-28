@@ -3,6 +3,9 @@
 ## FZF
 source <(fzf --zsh)
 
+## Atuin
+eval "#(atuin init zsh)"
+
 ## Starship
 eval "$(starship init zsh)"
 
