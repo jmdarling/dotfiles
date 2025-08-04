@@ -1,16 +1,24 @@
 # Enable tooling.
 
 ## FZF
-source <(fzf --zsh)
+if command -v fzf &> /dev/null; then
+    source <(fzf --zsh)
+fi
 
 ## Atuin
-eval "$(atuin init zsh)"
+if command -v atuin &> /dev/null; then
+    eval "$(atuin init zsh)"
+fi
 
 ## Starship
-eval "$(starship init zsh)"
+if command -v starship &> /dev/null; then
+    eval "$(starship init zsh)"
+fi
 
 ## Zoxide
-eval "$(zoxide init zsh)"
+if command -v zoxide &> /dev/null; then
+    eval "$(zoxide init zsh)"
+fi
 
 # ZSH "plugins"
 

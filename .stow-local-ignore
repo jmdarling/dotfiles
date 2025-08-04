@@ -1,2 +1,8 @@
-.config/nvim/lazy-lock.json
+.git/
+.gitignore
+.stow-local-ignore
+.stowrc
+CLAUDE.md
+README.md
 
+./nvim/.config/nvim/lazy-lock.json

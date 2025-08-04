@@ -1,7 +1,7 @@
 # DOTFILES
-Dotfiles for *nix NERV-HQ workstations
+Dotfiles for NERV-HQ workstations.
 
-## Manages...
-- ghostty
-- zsh
-
+## Manages:
+- [ghostty terminal emulator](https://ghostty.org/)
+- [starship terminal prompt](https://starship.rs/)
+- [zsh shell](https://www.zsh.org/)
