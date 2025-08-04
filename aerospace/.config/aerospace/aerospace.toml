@@ -1,0 +1,14 @@
+
+# Float finder windows.
+[[on-window-detected]]
+if.app-name-regex-substring = 'finder'
+run = 'layout floating'
+
+[gaps]
+inner.horizontal = 16
+inner.vertical = 16
+outer.top = 8
+outer.right = 8
+outer.bottom = 8
+outer.left = 8
+
