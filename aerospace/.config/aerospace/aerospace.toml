@@ -15,7 +15,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 16
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -205,7 +205,40 @@ automatically-unhide-macos-hidden-apps = false
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
 
-# Float finder windows.
+# Float ephemeral windows.
 [[on-window-detected]]
-    if.app-name-regex-substring = 'finder'
-    run = 'layout floating'
+if.app-name-regex-substring = '1Password|Finder|Passwords'
+run = 'layout floating'
+
+# Move windows to default workspaces.
+[[on-window-detected]]
+if.app-name-regex-substring = 'Chrome|Firefox|Orion|Safari|Vivaldi'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Discord|Messages|Outlook|Proton Mail|Teams'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Code'
+run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Claude'
+run = 'move-node-to-workspace L'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Music|Roon'
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Obsidian|TickTick'
+run = 'move-node-to-workspace N'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Ghostty'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'zoom'
+run = 'move-node-to-workspace Z'
